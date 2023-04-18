@@ -37,7 +37,6 @@ from AnonX.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
-PLAY_COMMAND_chn = get_command("PLAY_COMMAND_chh")
 
 
 @app.on_message(
