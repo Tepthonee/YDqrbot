@@ -20,16 +20,16 @@ PLAY_COMMAND_chh : ["اغاني", "ق" , "شغل", "مانو", "قناه","/", "
 STOP_COMMAND_chh : ["ايقاف"]
 PLAYMODE_COMMAND : ["playmode", "/وضع شغل", "وضع شغل", "/playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
-STREAM_COMMAND : ["stream", "cstream", "streamforce", "لايف", "ق لايف"]
+STREAM_COMMAND : ["stream", "cstream", "streamforce", "بث مباشر", "لايف"]
 
 #Playlists Command
-PLAYLIST_COMMAND : ["playlist", "القائمه"]
-DELETEPLAYLIST_COMMAND : ["deleteplaylist", "حذف القائمه"]
+PLAYLIST_COMMAND : ["playlist", "القائمة"]
+DELETEPLAYLIST_COMMAND : ["deleteplaylist", "حذف القائمة"]
 
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["song", "تنزيل", "يوتيوب"]
+SONG_COMMAND : ["song", "تنزيل", "بحث"]
 LYRICS_COMMAND : ["lyrics", "كلمات"]
 TAG_COMMAND : ["@all"]
 TAG_COMMAND_STOP : ["all stop"]
@@ -37,7 +37,7 @@ TAG_COMMAND_STOP : ["all stop"]
 
 # Admin Commands
 AUTH_COMMAND : ["auth", "رفع ادمن"]
-UNAUTH_COMMAND : ["unauth", "ت ادمن"]
+UNAUTH_COMMAND : ["unauth", "تنزيل ادمن"]
 AUTHUSERS_COMMAND : ["authusers", "الادمن"]
 PAUSE_COMMAND : ["pause", "cpause", "وقف", "#وقف", "/pause", "/cpause", "/وقف", "/ق وقف"]
 RESUME_COMMAND : ["resume", "cresume", "كمل", "#كمل", "/resume", "/cresume", "/ق كمل", "كمل", "#كملي"]
@@ -54,7 +54,7 @@ RESTART_COMMAND : ["restart", "ريستارت", "ريلود"]
 
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo", "رفع ثانوي"]
-DELSUDO_COMMAND : ["delsudo", "ت ثانوي"]
+DELSUDO_COMMAND : ["delsudo", "تنزيل ثانوي"]
 SUDOUSERS_COMMAND : ["sudolist", "الثانويين"]
 
 #Broadcast 
