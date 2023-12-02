@@ -16,7 +16,7 @@ def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(
-            text="🇦🇺 ᴇɴɢʟɪsʜ 🇦🇺",
+            text="الإنجليزيـة",
             callback_data=f"languages:en",
         ),
     )
@@ -60,7 +60,7 @@ async def lanuagecb(client, CallbackQuery, _):
 
 
 @app.on_callback_query(
-    filters.regex(r"languages:(.*?)") & ~BANNED_USERS
+    filters.regex(r"اللغات:(.*?)") & ~BANNED_USERS
 )
 @ActualAdminCB
 async def language_markup(client, CallbackQuery, _):
