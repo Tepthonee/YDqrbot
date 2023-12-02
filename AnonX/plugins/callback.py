@@ -137,7 +137,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=close_keyboard
         )
-    elif command == "Stop" or command == "End":
+    elif command == "ايقاف" or command == "انهاء":
         await CallbackQuery.answer()
         await Anon.stop_stream(chat_id)
         await set_loop(chat_id, 0)
@@ -163,9 +163,9 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
             _["admin_23"].format(mention)
         )
-    elif command == "Skip":
+    elif command == "تخطي":
         check = db.get(chat_id)
-        txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🥺\n│ \n└ʙʏ : {mention} 🥀"
+        txt = f"➻ تم التخطي 🥺\n│ \n└بواسطـة : {mention} 🥀"
         popped = None
         try:
             popped = check.pop(0)
@@ -174,7 +174,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
             if not check:
                 await CallbackQuery.edit_message_text(
-                    f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🥺\n│ \n└ʙʏ : {mention} 🥀",
+                    f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🥺\n│ \n└بواسطـة : {mention} 🥀",
                     reply_markup=close_keyboard
                 )
                 await CallbackQuery.message.reply_text(
@@ -187,7 +187,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         except:
             try:
                 await CallbackQuery.edit_message_text(
-                    f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🥺\n│ \n└ʙʏ : {mention} 🥀",
+                    f"➻ تم تخطي الدفق 🥺\n│ \n└بواسطـة : {mention} 🥀",
                     reply_markup=close_keyboard
                 )
                 await CallbackQuery.message.reply_text(
@@ -415,7 +415,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             db[chat_id][0]["played"] += duration_to_skip
         string = _["admin_33"].format(seconds_to_min(to_seek))
         await mystic.edit_text(
-            f"{string}\n\nᴄʜᴀɴɢᴇs ᴅᴏɴᴇ ʙʏ : {mention} !"
+            f"{string}\n\nᴄʜᴀɴɢᴇs ᴅᴏɴᴇ بواسطـة : {mention} !"
         )
 
 
